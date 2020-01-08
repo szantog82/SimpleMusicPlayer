@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="30dp">
+
+    <ImageView
+        android:id="@+id/folder_listview_elements_img"
+        android:layout_width="0dp"
+        android:layout_height="22sp"
+        app:layout_constraintEnd_toStartOf="@id/folder_listview_elements_name"
+        app:layout_constraintHorizontal_weight="10"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/folder_listview_elements_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:text="sgohfdgjbdfkg"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/folder_listview_elements_checkbox"
+        app:layout_constraintHorizontal_weight="90"
+        app:layout_constraintStart_toEndOf="@id/folder_listview_elements_img" />
+
+    <CheckBox
+        android:id="@+id/folder_listview_elements_checkbox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="10"
+        app:layout_constraintStart_toEndOf="@id/folder_listview_elements_name" />
+
+</android.support.constraint.ConstraintLayout>
